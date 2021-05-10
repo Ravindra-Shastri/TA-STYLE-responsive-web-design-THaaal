@@ -78,13 +78,67 @@ body {
     align-items: center;
     justify-content: space-between;
 }
+.flex-20 {
+    flex: 0 1 20%;
+}
+.flex-48 {
+    flex: 0 1 48%;
+}
 .justify-start {
     justify-content: flex-start;
 }
-header {
+.btn {
+    background-color: #53B667;
+    padding: 24px 32px;
+    color: #fff;
+    margin-top: 32px;
+}
+.header {
     background-color: #222946;
 }
-header li a {
+.header .active {
+    color: #53B667;
+}
+.header li a {
     color: #fff;
+    margin-right: 16px;
+}
+h1 {
+    font-size: 32px;
+    font-weight: 600;
+    padding: 32px 0;
+}
+.hero {
+    background-color: #E9ECFC;
+    padding: 40px;
+}
+.hero-btn {
+    margin-top: 40px;
+}
+.hero-img {
+    padding: 32px;
+}
+.art-header {
+    margin: 40px 0;
+    color: black;
+    text-align: center;
+    padding: 32px 0;
+    font-size: 48px;
+    font-weight: 600;
+}
+footer {
+    background-color: #222946;
+    padding: 24px;
+    margin: 32px 0;
+    color: #fff;
+}
+footer nav li {
+    color: #fff;
+}
+footer small {
+    color: rgb(197, 184, 184);
+}
+.footer-nav a {
+    color: rgb(197, 184, 184);
     margin-right: 16px;
 }
