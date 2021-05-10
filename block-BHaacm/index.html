@@ -32,9 +32,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive-assinment-1</title>
     <link rel="stylesheet" href="assets/stylesheet/style.css">
+    <script src="https://kit.fontawesome.com/1ccbc6b453.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="container flex">
             <div>
                 <img src="assets/media/logo.png" alt="logo">
@@ -45,7 +46,7 @@
                         <a href="#">HOME</a>
                     </li>
                     <li>
-                        <a href="#">BLOG</a>
+                        <a class="active" href="#">BLOG</a>
                     </li>
                     <li>
                         <a href="#">ABOUT</a>
@@ -55,16 +56,116 @@
         </div>
     </header>
     <main>
-        <section>
-            <article>
+        <section class="hero">
+            <article class="flex container">
                 <div>
-                    <h1>What is Lorem Ipsum?</h1>
-                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam,
-                        sit similique. Quia voluptates illo vero repellat ut dolorem a aliquid,
-                        quo mollitia impedit! A quo magni ratione ad itaque sit?</p>
+                    <div class="flex-48">
+                        <h1>What is Lorem Ipsum?</h1>
+                        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam,
+                            sit similique. Quia voluptates illo vero repellat ut dolorem a aliquid,
+                            quo mollitia impedit! A quo magni ratione ad itaque sit?
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque,
+                            cupiditate vero veritatis, reiciendis eius dolore libero porro
+                            aliquid inventore velit earum,quas praesentium beatae ducimus 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
+                             consequuntur non. Quibusdam aspernatur reiciendis, a illo animi quaerat modi reprehenderit 
+                            molestias quas cumque quo nemo numquam delectus consequuntur. Vero, error.
+                            facere. Ipsam cum sunt commodi. Lorem ipsum dolor sit amet consectetur, 
+                            adipisicing elit. Voluptas eum tempora eveniet illum modi ratione suscipit? 
+                            Ipsam minus ad corporis laboriosam amet? Error,ratione nemo vero rerum enim facilis quod!
+                        </p>
+                    </div>
+                    <div class="hero-btn">
+                        <a class="btn" href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="flex-48">
+                    <img class="hero-img" src="assets/media/01.png" alt="pic01">
+                </div>
+            </article>
+        </section>
+        <section>
+            <article class="container">
+                <header class="art-header">
+                    <h2>
+                        Our Blog
+                    </h2>
+                </header>
+                <div class="flex">
+                    <div class="flex-20">
+                        <div>
+                            <img src="assets/media/02.png" alt="pic02">
+                        </div>
+                     
+                        <div>
+                            <h1>Why do we use it?</h1>
+                            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam,
+                                sit similique. Quia voluptates illo vero repellat ut dolorem a aliquid,
+                                quo mollitia impedit! A quo magni ratione ad itaque sit?
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque,
+                                cupiditate vero veritatis, reiciendis eius dolore libero porro
+                                aliquid inventore velit earum,quas praesentium beatae ducimus 
+                            </p>
+                        </div>
+                        <div class="hero-btn">
+                            <a class="btn" href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="flex-20">
+                        <div>
+                            <img src="assets/media/03.png" alt="pic03">
+                        </div>
+                        <div>
+                           <h1>Where does it come from?</h1>
+                           <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam,
+                               sit similique. Quia voluptates illo vero repellat ut dolorem a aliquid,
+                               quo mollitia impedit! A quo magni ratione ad itaque sit?
+                               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque,
+                               cupiditate vero veritatis, reiciendis eius dolore libero porro
+                               aliquid inventore velit earum,quas praesentium beatae ducimus 
+                           </p>
+                        </div>
+                        <div class="hero-btn">
+                            <a class="btn" href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="flex-20">
+                        <div>
+                            <img src="assets/media/04.png" alt="pic04">
+                        </div>
+                        <div>
+                            <h1>Where can I get some?</h1>
+                            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam,
+                                sit similique. Quia voluptates illo vero repellat ut dolorem a aliquid,
+                                quo mollitia impedit! A quo magni ratione ad itaque sit?
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque,
+                                cupiditate vero veritatis, reiciendis eius dolore libero porro
+                                aliquid inventore velit earum,quas praesentium beatae ducimus 
+                            </p>
+                        </div>
+                        <div class="hero-btn">
+                            <a class="btn" href="#">Read More</a>
+                        </div>
+                    </div>
                 </div>
             </article>
         </section>
     </main>
+    <footer class="flex">
+        <small>
+            &copy;AltCampus
+        </small>
+        <nav>
+            <ul class="flex footer-nav">
+                <li>
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    
+                </li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>
