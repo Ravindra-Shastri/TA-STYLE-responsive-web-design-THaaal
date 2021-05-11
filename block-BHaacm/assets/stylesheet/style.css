@@ -78,8 +78,8 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-.flex-20 {
-    flex: 0 1 20%;
+.flex-30 {
+    flex: 0 1 30%;
 }
 .flex-48 {
     flex: 0 1 48%;
@@ -94,43 +94,55 @@ body {
     margin-top: 32px;
 }
 .header {
+    width: 100%;
     background-color: #222946;
+    padding: 0 2rem;
 }
 .header .active {
     color: #53B667;
 }
 .header li a {
     color: #fff;
-    margin-right: 16px;
+    margin-right: 2rem;
 }
 h1 {
-    font-size: 32px;
+    font-size: 2.4rem;
     font-weight: 600;
-    padding: 32px 0;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
 }
 .hero {
     background-color: #E9ECFC;
-    padding: 40px;
+    padding: 2rem;
+    width: 100%;
 }
 .hero-btn {
-    margin-top: 40px;
+    margin: 4rem 0;
 }
 .hero-img {
-    padding: 32px;
+    padding: 2rem 0;
+}
+.art-cotainer {
+    width: 100%;
+    padding: 2rem;
 }
 .art-header {
-    margin: 40px 0;
     color: black;
     text-align: center;
-    padding: 32px 0;
-    font-size: 48px;
+    padding: 2.4rem 0;
+    font-size: 2.4rem;
     font-weight: 600;
+}
+.art-img {
+    width: 100%;
+    max-height: 14rem;
 }
 footer {
     background-color: #222946;
-    padding: 24px;
-    margin: 32px 0;
+    padding: 2.4rem;
+    margin: 2rem 0;
     color: #fff;
+    width: 100%;
 }
 footer nav li {
     color: #fff;
@@ -140,5 +152,51 @@ footer small {
 }
 .footer-nav a {
     color: rgb(197, 184, 184);
-    margin-right: 16px;
+    padding-right: 4rem;
+}
+@media screen and (max-width:1200px){
+    .container {
+        max-width: 1140px;
+}
+@media screen and (max-width:992px){
+.container {
+    max-width: 960px;
+}
+} 
+@media screen and (max-width:576px){
+    .container {
+        max-width: 540px;
+    }
+}
+@media screen and (max-width:768px) {
+    .container {
+        max-width: 720px;
+    }
+    html {
+        font-size: 10px;
+    }
+    .flex-100{
+        flex: 1 0 100%;
+        margin: 2rem 0;
+    }
+    .wrap {
+        flex-wrap: wrap;
+    }
+    .column {
+        flex-direction: column;
+   }
+    .order-1 {
+        order: 1;
+    }
+    .brand {
+        margin-bottom: 2rem;
+    }
+    .header li a {
+        margin: 0 1.5rem;
+    }
+    .footer-nav a {
+margin: 2rem 1.5rem 0 1.5rem;
+display: inline-block;
+    }
+}
 }
