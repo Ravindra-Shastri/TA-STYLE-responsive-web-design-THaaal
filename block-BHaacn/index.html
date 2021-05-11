@@ -1,0 +1,98 @@
+<!-- - Create a responsive layout according to the design shown below.
+
+#### Large Screen view(Above 768px)
+
+![Responsive Layout Assignment](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/rwd/ex-2.png)
+
+#### Small Screen view(Below 768px)
+
+1. Figure what would be the best possible way to display the layout on small screens.
+
+2. Create hmaburger icon to toggle menu on mobile view.
+
+- Using CSS resets is necessary.
+- Use semantic tags and keep the nesting and indentation proper.
+- Pay attention to the codes, your code quality matters a lot.
+- Try to implement the layout as exactly as it has been provided in the design.
+- Pay attention to minor things like spacing, alignment, size, etc.
+- Use "Nunito" font-family for the assignment.
+- Figure out the best possible way to display the layout on small screens.
+- Create hmaburger icon to toggle menu on small screen view.
+- Once you are done with the assignment connect with the mentor and get the code reviewed. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive-assignment-2</title>
+    <link rel="stylesheet" href="assets/stylesheet/style.css">
+</head>
+<body>
+    <main>
+        <section class="hero container padding">
+            <header class="flex container nav-var">
+                <div>
+                    <img src="assets/media/logo.svg" alt="logo">
+                </div>
+                <nav>
+                    <ul class="flex nav-item">
+                        <li>
+                            <a href="#">HOME</a>
+                        </li>
+                        <li>
+                            <a href="#">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="#">SERVICES</a>
+                        </li>
+                        <li>
+                            <a href="#">CONTACT</a>
+                        </li>
+                        <li>
+                            <a class="btn btn-primary" href="#">Join Us</a>
+                        </li>
+                    </ul>
+                </nav>
+                </header>
+            <div class="flex">
+                <div class="flex-48 hero-item">
+                    <h1>
+                        Web Developer <br>
+                        Conference <strong>2020</strong>
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Illo voluptatum delectus ad, exercitationem mollitia optio
+                        impedit placeat accusantium nihil quo laborum, alias fugiat
+                        perspiciatis, provident quaerat unde cupiditate reiciendis?
+                    </p>
+                    <a class="btn btn-primary" href="#">Register Now</a>
+                </div>
+                <div class="flex-48 hero-img">
+                    <img src="assets/media/hero.png" alt="hero.png">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container padding flex about">
+                <div class="flex-48">
+                    <img src="assets/media/about.png" alt="about.png">
+                </div>
+                <div class="flex-48">
+                    <h2>
+                        ABOUT THE EVENT
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Atque, debitis ab rerum assumenda illum unde rem ex pariatur
+                        recusandae saepe enim explicabo veniam dicta sequi sint cumque 
+                        quia totam incidunt.
+                    </p>
+                    <a class="btn btn-primary" href="#">Know More</a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
