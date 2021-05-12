@@ -96,14 +96,14 @@ body {
     flex-direction: column;
 }
 .padding {
-    padding: 1rem 4rem;
+    padding: 2rem 0;
 }
 .btn {
     display: inline-block;
-    padding: 16px;
-    text-transform: uppercase;
+    padding: 16px 24px;
     font-weight: 600;
     letter-spacing: 0.8;
+    border-radius: 4px;
 }
 .btn-primary {
     background-color: var(--primary);
@@ -157,10 +157,12 @@ body {
     url(../media/banner.png)no-repeat;
     height: 74vh;
     background-size: cover;
+    padding: 3rem;
 }
 .hero-img {
-    width: 100%;
-    padding-top: 2rem ;
+    /* width: 100%; */
+    padding-top: 2rem;
+    padding-left: 13rem;
 }
 .hero-item h1 {
     font-size: 3rem;
@@ -176,12 +178,164 @@ body {
     color: var(--primary);
 }
 .about {
-    padding: 4rem 0;
+    padding: 3rem;
 }
 .about h2 {
     font-size: 3rem;
     font-weight: 700;
 }
 .about p{
+    padding: 2rem 0;                                                                                    
+}
+.info-content {
+    border: 2px dashed var(--primary);
+    padding: 1rem;
+    font-weight: 900;
+}
+.info-container h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
     padding: 2rem 0;
+}
+.info-container h3 {
+font-size: 1.6rem;
+font-weight: 600;
+padding: .6rem;
+}
+.schedule-container h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+.schedule-img {
+    width: 14rem;
+    height: 9rem;
+    border-radius: 2rem;
+    padding: 1.6rem;
+}
+.circle-item .active {
+    background-color: var(--primary);
+    color: #fff;
+}
+.schedule-item {
+    padding: .8rem 0;
+}
+.schedule-item h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: .5rem;
+}
+.schedule-item p {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+.circle {
+    width: 124px;
+    height: 124px;
+    border-radius: 50%;
+    padding: .8rem;
+    border: 2px dashed var(--primary); 
+    font-size: 40px;
+    font-weight: 900; 
+    text-align: center;
+    color: var(--primary);
+}
+hr {
+    width: 0px;
+    height: 3.2rem;
+    border: 1px dashed var(--primary);
+}
+.service {
+    font-size: 16rem;
+}
+.service .active {
+    background-color: var(--primary);
+    padding: 4rem 6rem;
+    border-radius: 6px;
+}
+.portfolio {
+    background: url(../media/banner.png)no-repeat;
+    background-size: cover;
+    height: 74vh;
+    padding: 2rem;
+}
+.portfolio-icon {
+background-color: var(--primary);
+color: #fff;
+font-size: 140px;
+}
+footer {
+    background-color: rgb(35,52,123);
+    padding: 1rem 0.4;
+}
+footer .logo {
+    padding:2rem 2rem;
+}
+footer .quick-link a {
+    color: rgb(161, 156, 156);
+    margin-right: .6rem;
+}
+footer h4 {
+    font-size: 20px;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+.follow a {
+    color: rgb(180, 175, 175);
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0 1rem;
+    padding: 1rem 0rem;
+}
+footer .small {
+    background-color: rgb(18,39,105);
+    padding: 2rem .1rem;
+    margin-top: 2rem;
+    color: rgb(161, 156, 156);
+}
+@media screen and (max-width:1200px){
+    .container {
+        max-width: 1140px;
+}
+@media screen and (max-width:992px){
+.container {
+    max-width: 960px;
+}
+} 
+@media screen and (max-width:576px){
+    .container {
+        max-width: 540px;
+    }
+}
+@media screen and (max-width:768px) {
+    .container {
+        max-width: 720px;
+    }
+    html {
+        font-size: 10px;
+    }
+    .flex-100{
+        flex: 1 0 100%;
+        margin: 2rem 0;
+    }
+    .wrap {
+        flex-wrap: wrap;
+    }
+    .column {
+        flex-direction: column;
+   }
+    .order-1 {
+        order: 1;
+    }
+    .brand {
+        margin-bottom: 2rem;
+    }
+    .header li a {
+        margin: 0 1.5rem;
+    }
+    .footer-nav a {
+      margin: 2rem 1.5rem 0 1.5rem;
+      display: inline-block;
+    }
+}
 }
