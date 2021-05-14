@@ -63,9 +63,9 @@ a {
     text-decoration: none;
 }
 body {
-	font-family:"open sans", sans-serif;
+	font-family:'nunito', sans-serif;
     line-height: 1.5;
-    font-size: 16px;
+    font-size: 24px;
 }
 .container {
     max-width: 1380px;
@@ -149,7 +149,14 @@ body {
     position: relative;
 }
 .nav-item a{
+    font-size: 1.1rem;
+    font-weight: 600;
     margin-right: 2rem;
+    color: #fff;
+}
+.nav-item-right a {
+    font-size: 40px;
+    font-weight: 800;
     color: #fff;
 }
 .hero {
@@ -157,7 +164,7 @@ body {
     url(../media/banner.png)no-repeat;
     height: 74vh;
     background-size: cover;
-    padding: 3rem;
+    padding: 4rem;
 }
 .hero-img {
     /* width: 100%; */
@@ -172,6 +179,7 @@ body {
 .hero-item p {
     color: #fff;
     padding: 2rem 0;
+    font-size: 20px;
 
 }
 .hero strong {
@@ -181,12 +189,17 @@ body {
     padding: 3rem;
 }
 .about h2 {
-    font-size: 3rem;
-    font-weight: 700;
+    font-size: 2.6rem;
+    font-weight: 800;
 }
-.about p{
-    padding: 2rem 0;                                                                                    
+.about p {
+    padding: 1.4rem 0;  
+    font-size: 20px;                                                                                  
 }
+.info-container {
+    background-color: #DFECFE;
+    padding: 4rem;
+} 
 .info-content {
     border: 2px dashed var(--primary);
     padding: 1rem;
@@ -198,9 +211,14 @@ body {
     padding: 2rem 0;
 }
 .info-container h3 {
-font-size: 1.6rem;
-font-weight: 600;
+font-size: 1.9rem;
+font-weight: 800;
 padding: .6rem;
+}
+.info-content p {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(104, 98, 98);
 }
 .schedule-container h2 {
     font-size: 3rem;
@@ -227,6 +245,10 @@ padding: .6rem;
 .schedule-item p {
     font-size: 20px;
     margin-bottom: 16px;
+}
+.service-container {
+    background-color: #DFECFE;
+    padding: 4rem 8rem;
 }
 .circle {
     width: 124px;
@@ -256,23 +278,54 @@ hr {
     background: url(../media/banner.png)no-repeat;
     background-size: cover;
     height: 74vh;
-    padding: 2rem;
 }
 .portfolio-icon {
-background-color: var(--primary);
 color: #fff;
 font-size: 140px;
+background-color: var(--primary);
+}
+.news-container {
+    background-color: #DFECFE;
+    padding: 4rem 0;
+}
+.news-content {
+    padding-left: 2.6rem;
+}
+.news-content img {
+    width: 100%;
+}
+.news-container h2 {
+    font-size: 2.6rem;
+    font-weight: 800;
+    padding: 2rem 0;
+}
+.news-container h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: .5rem;
+}
+.news-btn {
+    font-size: 1.2rem;
+    text-decoration:underline
+}
+.news-container .active {
+    color: var(--primary);
+}
+.news-container .inactive {
+    color: black;
 }
 footer {
     background-color: rgb(35,52,123);
-    padding: 1rem 0.4;
 }
 footer .logo {
-    padding:2rem 2rem;
+    padding:2rem 5rem;
+    
 }
 footer .quick-link a {
     color: rgb(161, 156, 156);
     margin-right: .6rem;
+    font-weight: 700;
+    font-size: 1.2rem;
 }
 footer h4 {
     font-size: 20px;
@@ -280,17 +333,22 @@ footer h4 {
     color: #fff;
     margin-bottom: 1rem;
 }
-.follow a {
+.follow {
+    padding-left:3rem ;
+}
+.follow-icon a {
     color: rgb(180, 175, 175);
     font-size: 20px;
     font-weight: 800;
-    margin: 0 1rem;
-    padding: 1rem 0rem;
+    padding: 1rem .2rem;
+}
+.footer-nav {
+    padding-left: 12rem;
 }
 footer .small {
     background-color: rgb(18,39,105);
-    padding: 2rem .1rem;
-    margin-top: 2rem;
+    padding: 1rem .1rem;
+    margin: 2rem 0;
     color: rgb(161, 156, 156);
 }
 @media screen and (max-width:1200px){
@@ -301,10 +359,16 @@ footer .small {
 .container {
     max-width: 960px;
 }
+html {
+    font-size: 14px;
+}
 } 
 @media screen and (max-width:576px){
     .container {
         max-width: 540px;
+    }
+    html {
+        font-size: 10px;
     }
 }
 @media screen and (max-width:768px) {
@@ -312,13 +376,13 @@ footer .small {
         max-width: 720px;
     }
     html {
-        font-size: 10px;
+        font-size: 12px;
     }
     .flex-100{
         flex: 1 0 100%;
         margin: 2rem 0;
     }
-    .wrap {
+    /* .wrap {
         flex-wrap: wrap;
     }
     .column {
@@ -336,6 +400,6 @@ footer .small {
     .footer-nav a {
       margin: 2rem 1.5rem 0 1.5rem;
       display: inline-block;
-    }
+    } */
 }
 }
